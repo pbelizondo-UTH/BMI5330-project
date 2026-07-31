@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Methodology & Tools</title>
+  <style>
+    /* Global Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    /* Table Styling */
+    .methods-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .methods-table th {
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    .methods-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Alternating row colors for easy scanning */
+    .methods-table tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    /* Hover highlight */
+    .methods-table tr:hover {
+      background-color: #f1f4f8;
+    }
+
+    /* Code style for command-line tools and scripts */
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, "Courier New", monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Project Methodology & Documentation</h1>
+  <p>Below is the complete overview of datasets, databases, software, and computational utilities used in this analysis.</p>
+
+  <!-- TABLE 1: DATASETS & DATABASES -->
+  <h2>1. Datasets & Databases</h2>
+  <table class="methods-table">
+    <thead>
+      <tr>
+        <th>Dataset/Database</th>
+        <th>Source</th>
+        <th>Version/Release/Accession</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Human genome assembly</strong></td>
+        <td>UCSC Genome Browser</td>
+        <td>GRCh38/hg38</td>
+        <td>Gene coordinates and genome visualization</td>
+      </tr>
+      <tr>
+        <td><strong>GENCODE annotation</strong></td>
+        <td>GENCODE</td>
+        <td>v49</td>
+        <td>Gene and transcript annotation</td>
+      </tr>
+      <tr>
+        <td><strong>dbSNP</strong></td>
+        <td>NCBI</td>
+        <td>Build 155</td>
+        <td>Small variant identification and annotation</td>
+      </tr>
+      <tr>
+        <td><strong>1000 Genomes Project</strong></td>
+        <td>International Genome Sample Resource (IGSR)</td>
+        <td>Phase 3 (GRCh37/hg19)</td>
+        <td>Population allele frequency analysis</td>
+      </tr>
+      <tr>
+        <td><strong>dbVar</strong></td>
+        <td>NCBI</td>
+        <td>Current release (accessed July 2026)</td>
+        <td>Structural variant identification and classification</td>
+      </tr>
+      <tr>
+        <td><strong>ClinVar</strong></td>
+        <td>NCBI</td>
+        <td>Accessed July 2026</td>
+        <td>Clinical variant interpretation</td>
+      </tr>
+      <tr>
+        <td><strong>ClinGen</strong></td>
+        <td>ClinGen</td>
+        <td>Accessed July 2026</td>
+        <td>Gene–disease validity assessment</td>
+      </tr>
+      <tr>
+        <td><strong>GWAS Catalog</strong></td>
+        <td>NHGRI-EBI</td>
+        <td>GRCh38.p14; dbSNP Build 156 (accessed July 2026)</td>
+        <td>Trait-associated variant identification</td>
+      </tr>
+      <tr>
+        <td><strong>DAVID</strong></td>
+        <td>DAVID Bioinformatics Resources</td>
+        <td>DAVID 2025 (March 2026)</td>
+        <td>Functional enrichment analysis</td>
+      </tr>
+      <tr>
+        <td><strong>ENCODE DNase-seq</strong></td>
+        <td>ENCODE/UCSC Genome Browser</td>
+        <td>GM12878 and neuronal DNase-seq datasets (GRCh38)</td>
+        <td>Chromatin accessibility analysis</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- TABLE 2: SOFTWARE & TOOLS -->
+  <h2>2. Software & Computational Tools</h2>
+  <table class="methods-table">
+    <thead>
+      <tr>
+        <th>Software/Tool</th>
+        <th>Version</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Oracle VM VirtualBox</strong></td>
+        <td>7.2.4 (r170995)</td>
+        <td>Virtualized computational environment</td>
+      </tr>
+      <tr>
+        <td><strong>Ubuntu Linux</strong></td>
+        <td>24.04.3 LTS (Noble Numbat)</td>
+        <td>Operating system for command-line bioinformatics analyses</td>
+      </tr>
+      <tr>
+        <td><strong>R</strong></td>
+        <td>4.5.1</td>
+        <td>Statistical analysis, data processing, and visualization</td>
+      </tr>
+      <tr>
+        <td><strong>Python</strong></td>
+        <td>3.12.3</td>
+        <td>Custom scripts and genomic data processing</td>
+      </tr>
+      <tr>
+        <td><strong>bcftools</strong></td>
+        <td>1.19 (htslib 1.19)</td>
+        <td>Variant extraction and VCF processing</td>
+      </tr>
+      <tr>
+        <td><strong>UCSC Genome Browser utilities</strong></td>
+        <td>Accessed July 2026</td>
+        <td>BigWig conversion and genomic signal analysis</td>
+      </tr>
+      <tr>
+        <td><code>awk</code>, <code>grep</code>, <code>sed</code>, <code>uniq</code></td>
+        <td>Linux command-line utilities</td>
+        <td>Text processing and data filtering</td>
+      </tr>
+      <tr>
+        <td><code>Python script: calculate_dnase_signal_fast.py</code></td>
+        <td>Custom script</td>
+        <td>Promoter DNase-seq signal quantification</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
