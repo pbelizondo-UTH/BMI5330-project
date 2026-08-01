@@ -242,12 +242,7 @@ calculate_dnase_signal_fast.py (View on GitHub)
 </p>
 
 <p>
-This custom Python script was developed to quantify DNase-seq signal across promoter regions
-for chromatin accessibility analysis. The script takes DNase-seq signal data in bedGraph format
-and promoter coordinates in BED format as input. It computes base-pair overlap between genomic
-intervals and sums signal intensity weighted by overlap length to generate promoter-level DNase
-signal measurements. The output is a tab-delimited file containing promoter-level DNase signal
-values used for downstream analysis of chromatin accessibility.
+This custom Python script was developed to quantify DNase-seq signal across promoter regions for chromatin accessibility analysis. The script takes promoter coordinates in BED format and DNase-seq signal data in bedGraph format as input. For each promoter region, overlapping DNase-seq intervals are identified, and signal values are summed after weighting by the number of overlapping base pairs. The output is a tab-delimited file containing integrated promoter-level DNase signal values used for downstream chromatin accessibility analysis of target genes. The script uses sorted genomic intervals and an incremental index to improve computational efficiency during overlap calculations.
 </p>
 </body>
 </html>
