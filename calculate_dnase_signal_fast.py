@@ -1,4 +1,4 @@
-promoter_file = "sorted_chr1_promoters_with_ID.bed"
+promoter_file = "sorted_chr_promoters_with_ID.bed"
 dnase_file = "wgEncodeUwDnaseGm12878RawRep1.bigWig.bgr"
 output_file = "promoter_dnase_signal.txt"
 
