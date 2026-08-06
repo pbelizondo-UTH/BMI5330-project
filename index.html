@@ -93,6 +93,21 @@
     <p class="course-info">BMI 5330 – Introduction to Bioinformatics | UTHealth Houston</p>
     <p class="author-info">By Paula Elizondo (2026)</p>
     <hr style="border: 0; border-top: 1px solid #dcdcdc; margin-top: 20px;">
+    <!-- REFERENCES BUTTON -->
+    <div style="margin: 20px 0;">
+      <a href="#references" style="
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #2c3e50;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      ">
+      📚 View References
+      </a>
+    </div>
+
   </header>
 
   <p>Below is the complete overview of datasets, databases, software, and computational utilities used in this analysis.</p>
@@ -239,7 +254,7 @@
     </tbody>
   </table>
   
-<h3>Custom Script Description</h3>
+<h2>3. Custom Script Description</h2>
 
 <p>
 <a href="https://github.com/pbelizondo-uth/BMI5330-project/blob/main/calculate_dnase_signal_fast.py" target="_blank">
@@ -250,5 +265,30 @@ calculate_dnase_signal_fast.py (View on GitHub)
 <p>
 This custom Python script was developed to quantify DNase-seq signal across promoter regions for chromatin accessibility analysis. The script takes promoter coordinates in BED format and DNase-seq signal data in bedGraph format as input. For each promoter region, overlapping DNase-seq intervals are identified, and signal values are summed after weighting by the number of overlapping base pairs. The output is a tab-delimited file containing integrated promoter-level DNase signal values used for downstream chromatin accessibility analysis of target genes. The script uses sorted genomic intervals and an incremental index to improve computational efficiency during overlap calculations.
 </p>
+  <h2 id="references">4. Scientific References</h2>
+
+<p>
+The following academic and scientific sources were used to support the background, interpretation, and discussion of this project:
+</p>
+
+<ul>
+  <li>American Psychiatric Association. (2022). <i>Diagnostic and statistical manual of mental disorders</i> (5th ed., text rev.). https://doi.org/10.1176/appi.books.9780890425787</li>
+
+  <li>Berridge, M. J. (2014). Calcium signaling and psychiatric disease: Bipolar disorder and schizophrenia. <i>Cell and Tissue Research</i>, 357(2), 477–492. https://doi.org/10.1007/s00441-014-1806-z</li>
+
+  <li>Bousman, C. A., et al. (2023). CPIC guideline for CYP2D6, CYP2C19, CYP2B6, SLC6A4, and HTR2A genotypes and SSRI antidepressants. <i>Clinical Pharmacology & Therapeutics</i>, 114(1), 51–68. https://doi.org/10.1002/cpt.2903</li>
+
+  <li>Donaldson, Z. R., et al. (2016). rs6295 polymorphism and psychiatric illness. <i>Translational Psychiatry</i>, 6, e746. https://doi.org/10.1038/tp.2015.226</li>
+
+  <li>Gray, N. A., et al. (2013). Antidepressant effects on serotonin-1A autoreceptors. <i>Biological Psychiatry</i>, 74(1), 26–31. https://doi.org/10.1016/j.biopsych.2012.12.020</li>
+
+  <li>Hanna, S., et al. (2025). SLC6A4 and HTR1A variants in antidepressant failure. <i>The Pharmacogenomics Journal</i>, 25, 13. https://doi.org/10.1038/s41397-024-00345-2</li>
+
+  <li>Luddington, N. S., et al. (2009). Serotonin transporter promoter variation review. <i>Primary Care Companion to the Journal of Clinical Psychiatry</i>, 11(3), 93–102. https://doi.org/10.4088/PCC.08r00643</li>
+
+  <li>National Institute of Mental Health. (n.d.). What is prevalence? https://www.nimh.nih.gov/health/statistics/what-is-prevalence</li>
+
+  <li>Stein, K., et al. (2021). Serotonin transporter variation and antidepressant response. <i>Journal of Personalized Medicine</i>, 11(12), 1334. https://doi.org/10.3390/jpm11121334</li>
+</ul>
 </body>
 </html>
